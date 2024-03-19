@@ -1,7 +1,7 @@
-all: myquotes.dat
+all: myquotes.fortune.dat
 
-myquotes.dat: myquotes.fortune
+myquotes.fortune.dat: myquotes.fortune
 	strfile myquotes.fortune
 
 clean:
-	git clean -Xdff
+	rm -f myquotes.fortune.dat
